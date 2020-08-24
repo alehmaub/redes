@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - Lehmacher</title>
+    <style>
+        li {
+            margin-top: 5px;
+        }
+        form {
+            width: 90%;
+            margin: auto;
+            padding: 5px;
+            background-color: antiquewhite;
+        }
+        label {
+            font-weight: bold;
+        }
+        label, input {
+            margin: 4px;
+            padding: 2px;
+        }
+        h2 {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FORMULARIOS</h1>
+    <hr>
+    <form action="./respuestaFormulario.html" target="_blank" method="get">
+        <h2>Formulario sin validación</h2>
+        <ul>
+            <li>
+                <label for="nombre">Nombre: </label> <br>
+                <input type="text" autofocus title="Ingrese su nombre" id="nombre" name="nombre">
+            </li>
+            <li>
+                <label for="apellido">Apellido: </label> <br>
+                <input type="text" title="Ingrese apellido" id="apellido" name="apellido">
+            </li>
+            <li>
+                <label for="password">Contraseña: </label><br>
+                <input type="password" title="Ingrese contraseña" id="password" name="password"> 
+            </li>
+            <li>
+                <label for="oculto">Oculto: </label> <br>
+                <input type="hidden" title="Campo oculto" id="oculto" name="oculto">
+            </li>
+            <li>
+                <label for="deshabilitado">Deshabilitado: </label> <br>
+                <input disabled placeholder="campo deshabilitado" title="Campo deshabilitado" id="deshabilitado" name="deshabilitado">
+            </li> 
+            <li>
+                <label for="lectura">Solo lectura: </label> <br>
+                <input type="text" value="readonly" readonly title="Campo solo lectura" id="lectura" name="lectura">
+            </li> <hr>
+            <li>
+                <label for="deportes">Practica deportes</label> <br>
+                <input type="checkbox">
+            </li>
+            <li>
+                <label for="artes">Practica artes</label> <br>
+                <input type="checkbox">
+            </li>
+            <li>
+                <label for="musical">Practica musical</label> <br>
+                <input type="checkbox">
+            </li> <hr>
+            <li>
+                <label for="sexo">Sexo</label> <br>
+                <input type="radio" id="masc" name="sexo" value="masc">
+                <label for="masc">Masculino</label><br>
+                <input type="radio" id="fem" name="sexo" value="fem">
+                <label for="fem">Femenino</label><br>
+                <input type="radio" id="otro" name="sexo" value="otro">
+                <label for="otro">Otro</label><br><hr>
+            </li>
+            <li>
+                <label for="estudios">Estudios cursados: </label>
+                <select name="estudios" id="estudios">
+                    <option value="blank">-</option>
+                    <option value="primario">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="terciario">Terciarios</option>
+                    <option value="universitario">Universitario</option>
+                    <option value="posgrado">Posgrado</option>
+                </select>
+            </li>
+            <li>
+                <label for="fecha">Fecha y hora</label><br>
+                <input type="date"><input type="time">
+            </li>
+            <li>
+                <label for="color">Color:</label><br>
+                <input type="color">
+            </li>
+            <hr>
+            <li>
+                <input type="submit" value="Enviar sin validacion">
+            </li>
+            <li>
+                <input type="reset" value="Restablecer el formulario">
+            </li>
+        </ul>
+
+    </form>
+
+    <hr>
+
+    <form action="./respuestaFormulario2.html" method="GET" target="_blank">
+        <h2>Formulario con validación</h2>
+        <ul>
+            <li>
+                <label for="comentario">Comentario</label> <br>
+                <input type="text" title="Agregue comentarios" id="comentario" name="comentario" required>
+            </li>
+            <li>
+                <label for="mail">Email: </label> <br>
+                <input type="email" title="email" id="email" name="email" placeholder="asd@asd.com" required>                
+            </li>
+            <li>
+                <label for="entero">Numero entero limitado</label> <br>
+                <input type="number" title="entero" id="entero" name="entero" min="1" max="5" placeholder="1-5">
+            </li>
+            <li>
+                <label for="decimal">Numero decimal</label> <br>
+                <input type="number" title="decimal" id="decimal" name="decimal" min="0" max="9" step="0.1">
+            </li>
+            <li>
+                <label for="sitio">URL</label> <br>
+                <input type="url" title="sitio" id="sitio" name="sitio" placeholder="http://">
+            </li>
+            <li>
+                <label for="patron">Pattern de validacion</label> <br>
+                <input type="text" title="patron" id="patron" name="patron" pattern="[a-z]{3}[1-2]{2}" placeholder="a-z 1-2">
+            </li>
+            <li>
+                <label for="tel">Pattern de validacion</label> <br>
+                <input type="tel" title="tel" id="tel" name="tel" pattern="[1-9]{2}[1]{2}[1-9]{8}" placeholder="+54 11 12345678">
+            </li>
+            <li>
+                <input type="submit" value="Enviar con validación">
+            </li>
+            <li>
+                <input type="reset" value="Restablecer formulario">
+            </li>
+        </ul>
+    </form>
+
+    <hr>
+
+	<a href="/..">Volver</a>
+    
+</body>
+</html>
