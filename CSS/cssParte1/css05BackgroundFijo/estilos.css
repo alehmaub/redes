@@ -1,0 +1,26 @@
+#cajaConImagenDeFondo {
+    background-image: url('./tooth.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.7;
+    color:orangered;
+    width: 50%;
+    margin: auto;
+    border: tomato;
+    border-style: solid;
+    padding: 5%;
+    overflow: auto;
+    height: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+}
+
+.contenedor {
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+    background-color: turquoise;
+    border: teal;
+    border-style: solid;
+}

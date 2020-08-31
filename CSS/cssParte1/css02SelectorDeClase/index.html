@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Clase - Lehmacher</title>
+    <style>
+        .claseAcotacion {
+            text-align: center;
+            font-size: 18px;
+			color: blue;
+			font-style: italic;
+			border-style: solid;
+			border-width: thin;
+			border-color: blue;
+        }
+        .claseDestacado {
+            font-weight: bolder;
+            font-size: 18px;
+        }
+        .claseAyuda {
+            text-align: center;
+            font-size: 18px;
+			color: orange;
+			font-style: italic;
+			border-style: solid;
+			border-width: thin;
+			border-color:orangered;
+            width: 50%;
+        }
+        .contenidoComun {
+            font-size: 12px;
+            color: black;
+        }
+        #idUnico {                 /* el parrafo con id="id1" va a tomar este etilo // no debe repetirse */
+            text-align: center;
+            color: red;
+            font-style: italic;
+            border-style: solid;
+            border-width: thick;
+            border-color: red;
+            width: 30%;
+        }
+        .imagenAl50 {
+            max-width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Selector de clase - Lehmacher</h1><hr>
+    <p>Este párrafo contiene un grupo de palabras delimitado por la etiqueta "span". Comienza acá: <span class="claseDestacado">Este es el grupo de palabras con class="claseDestacado"</span></p>
+    <p class="claseAcotacion">Parrafo con estilo class="claseAcotacion" definida en la etiqueta style en el Header del documento.</p>
+    <p class="claseDestacado">Este párrafo toma el estilo de class="claseDestacado"</p>
+    <p class="claseAyuda">Este párrafo toma el estilo de class="claseAyuda" definida en la etiqueta style en el Header del documento.</p>
+    <p class="contenidoComun">Este párrafo lleva el estilo definido en el Header del documento como "contenidoComun".</p>
+    <p id="idUnico">Párrafo con contenido formateado con estilo particular definido como id="idUnico" en el Header del documneto.</p>
+    <h1>Todas las imágenes con class="imagenAl50" en esta página se encuentran limitadas al 50% del ancho del viewport más allá de su tamaño real en pixeles:</h1>
+    <img src="./tooth.jpeg" alt="Beartooth" class="imagenAl50">
+    <hr>
+    <a href="/..">Volver</a>
+</body>
+</html>

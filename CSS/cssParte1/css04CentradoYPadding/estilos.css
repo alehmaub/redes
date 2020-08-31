@@ -1,0 +1,20 @@
+.elementoCentrado {
+    margin: auto;
+    width: 50%;
+    background-color: aquamarine;
+}
+
+.elementoCentradoConPadding {
+    margin: auto;
+    width: 50%;
+    background-color:orange;
+    padding: 0  10%;
+}
+
+.elementoCentradoConPaddingYBoxSizing {
+    margin: auto;
+    width: 50%;
+    background-color: lightblue;
+    padding: 0  10%;
+    box-sizing: border-box;
+}
