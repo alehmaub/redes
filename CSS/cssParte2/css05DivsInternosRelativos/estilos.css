@@ -1,0 +1,63 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: tomato;
+}
+
+html, body {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: bisque;
+    padding: 10px;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    background-color: teal;
+    overflow: auto;
+} 
+
+.uno {
+    width: 80%;
+    background-color: darkmagenta;
+    color: lavender;
+    padding: 1%;
+    margin-left: 0%;
+    margin-top: 1%;
+}
+
+.dos {
+    width: 60%;
+    padding: 1%;
+    margin-left: 10%;
+    background-color: greenyellow;
+}
+
+.tres {
+    width: 50%;
+    margin: auto;
+    height: 100px;
+    background-color: khaki;
+    overflow: auto;
+}
+
+.modal {
+    background-color: blue;
+    color: white;
+    width: 30%;
+    height: 200px;
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    opacity: 0.5;
+    overflow-y: auto;
+    visibility: visible;
+    z-index: 10;
+}

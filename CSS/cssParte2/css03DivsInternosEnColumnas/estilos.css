@@ -1,0 +1,35 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+    background-color: paleturquoise;
+    padding: 10px;
+    overflow: auto;
+}
+
+.alto, .ancho {
+    width: 30%;
+    margin: 5px;
+    background-color: lightsalmon;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.alto {
+    height: 600px;
+}
+
+.ancho {
+    height: 250px;
+}
+
+img {
+    max-width: 100%;
+    margin: 1%;
+}

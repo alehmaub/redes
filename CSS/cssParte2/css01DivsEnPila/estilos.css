@@ -1,0 +1,57 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    background-color: paleturquoise;
+    padding: 10px;
+}
+
+.uno, .dos, .tres, .cuatro, .cinco {
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    border-style: solid;
+    border-radius: 15px;
+    display: flex;
+}
+
+.uno {
+    box-shadow: 15px 15px 5px grey;
+    background: linear-gradient(red,orange,yellow);
+    justify-content: center;
+    align-items: center;
+}
+
+.dos {
+    background: radial-gradient(red,orange,yellow);
+    font-weight: bolder;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tres {
+    background: radial-gradient(red,orange,yellow);
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuatro {
+    box-shadow: 15px 15px 5px grey;
+    background: linear-gradient(45deg, red,orange,yellow);
+
+}
+
+.cinco {
+    background: linear-gradient(-45deg, red,orange,yellow);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 1%;
+}

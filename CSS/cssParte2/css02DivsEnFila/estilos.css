@@ -1,0 +1,33 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    background-color: paleturquoise;
+    padding: 10px;
+    overflow: auto;
+}
+
+.uno, .dos, .tres, .cuatro, .cinco {
+    width: 20%;
+    height: 200px;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 5px 5px 5px grey;
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.dos, .cuatro {
+    background: radial-gradient(green,lime, lightgreen);
+}
+
+.uno, .tres, .cinco {
+    font-size: 20px;
+    background: linear-gradient(green,lime, lightgreen)
+}

@@ -1,0 +1,57 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    background-color: paleturquoise;
+    padding: 10px;
+    overflow: auto;
+}
+
+.btnOpcion {
+    background-color: lightsalmon;
+    width: 200px;
+    float: left;
+    margin: 5px;
+    padding: 1%;
+    border-style: solid;
+}
+
+.btnOpcion:hover {
+    background-color: orangered;
+    color: linen;
+}
+
+.btnOpcion:active {
+    background-color: lime;
+    color:magenta;
+}
+
+.clear {
+    clear: both;
+}
+
+input:focus {
+    background-color: yellowgreen;
+}
+
+.imagenes {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    float: left;
+}
+
+.imagenes:active {
+    width: 800px;
+    height: 400px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
