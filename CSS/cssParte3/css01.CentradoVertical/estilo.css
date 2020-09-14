@@ -1,0 +1,17 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.contenedor {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

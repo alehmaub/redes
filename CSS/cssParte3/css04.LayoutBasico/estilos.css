@@ -1,0 +1,69 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: thistle;
+}
+
+.contenedor {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background-color: teal;
+}
+
+.header, .footer {
+    height: 10%;
+    width: 100%;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo {
+    height: 80%;
+    width: 100%;
+    display: block;
+}
+
+.nav {
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 80%;
+    height: 100%;
+    float: left;
+    background-color: mediumseagreen;
+    overflow: auto;
+    font-size: 50px;
+}
+
+.menu {
+    width: 200px; 
+  }
+  
+  .menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .menu a.active {
+    background-color: #4CAF50;
+    color: white;
+  }

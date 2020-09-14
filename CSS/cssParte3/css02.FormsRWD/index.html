@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms RWD - Lehmacher</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+    
+    <div class="header"><h2>Forms RWD - Lehmacher</h2></div>
+    <form action="./respuesta.html" method="get" target="_blank" id="form">
+        <div class="cuerpo">
+            <div class="entradas">
+                <label for="nombre">1. Nombre:</label>
+                <input type="text" name="nombre">
+            </div>
+            <div class="entradas"><label for="apellido">2. Apellido:</label>
+                <input type="text" name="apellido">
+            </div>
+            <div class="entradas">
+                <label for="passwor">3. Password:</label>
+                <input type="password" name="password">
+            </div>
+            <div class="entradas">
+                <label for="deshabilitado">4. Campo deshabilitado</label>
+                <input type="text" placeholder="Campo deshabilitado" name="deshabilitado" disabled>
+            </div>
+            <div class="entradas">
+                <label for="datetime">5. Fecha y hora:</label>
+                <input type="date" name="fecha">
+                <input type="time" name="hora">
+            </div>
+            <div class="entradas">
+                <label for="DNI">6. DNI:</label>
+                <input type="number" name="DNI">
+            </div>
+            <div class="entradas">
+                <label for="extra">7. Actividades extracurriculares: </label>
+                    <label for="musica"> Musica</label>
+                    <input type="checkbox" id="extr1" name="extr1" value="musica">
+                    <label for="vehicle2"> Deporte</label>
+                    <input type="checkbox" id="extra2" name="extra2" value="deporte">
+                    <label for="vehicle3"> Teatro</label>
+                    <input type="checkbox" id="extra3" name="extra3" value="teatro">
+            </div>
+            <div class="entradas">
+                <label for="sexo">8. Sexo</label>
+                <label for="male">Masculino</label>
+                <input type="radio" id="masc" name="sexo" value="masc">
+                <label for="female">Femenino</label>
+                <input type="radio" id="fem" name="sexo" value="fem">
+                <label for="other">Otro</label>
+                <input type="radio" id="otro" name="sexo" value="otro">
+            </div>
+            <div class="entradas">
+                <label for="vacio">9. Vacio</label>
+            </div>
+            <div class="entradas">
+                <label for="estudios">10. Estudios</label>
+                <select name="estudios" id="estudios">
+                    <option value="primario">Primario</option>
+                    <option value="secundario">Secundario</option>
+                    <option value="terciario">Terciario</option>
+                    <option value="universitario">Universitario</option>
+                    <option value="posgrado">Posgrado</option>
+                </select>
+            </div>
+            <div class="entradas">
+                <label for="area">11. Area de desempeño</label>
+                <select name="area" id="area">
+                    <option value="admin">Administracion</option>
+                    <option value="cuentas">Cuentas</option>
+                    <option value="tesoreria">Tesoreria</option>
+                    <option value="recepcion">Recepcion</option>
+                </select>
+            </div>
+            <div class="entradas">
+                <label for="turno">12. Turno</label>
+                <select name="turno" id="turno">
+                    <option value="mañana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noche">Noche</option>
+                </select>
+            </div>
+            <div class="entradas">
+                <label for="conduce">13. ¿Conduce?</label>
+                <label for="si">Si</label>
+                <input type="radio" id="si" name="conduce" value="no">
+                <label for="no">No</label>
+                <input type="radio" id="no" name="conduce" value="no">
+            </div>
+        </div>
+        <div class="botones">
+            <input type="submit" class="boton" value="ENVIAR">
+            <input type="reset" class="boton" value="RESET">
+        </div>
+    </form>    
+    <div class="footer"><h3>Footer Forms RWD</h3></div>
+
+</body>
+</html>

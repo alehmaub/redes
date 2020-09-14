@@ -1,0 +1,265 @@
+<!Doctype html>
+<html lang="es">
+
+<head>
+<title>Tabla RWD para datos</title>
+<style>
+
+/*Todas las etiquetas*/
+* {margin:0;padding:0; border: 0 none; }
+* {box-sizing: border-box;}
+
+/*En particular*/
+html{
+  background:#0D757D;
+  font-size: 14px;
+  color: #e6eff0;
+  font-family: Roboto Slab;
+}
+
+h1 {
+  font-weight: normal;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+table {
+  background-color: #15BFCC;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgba(0,0,0,1);
+}
+
+thead {
+  background-color: #FF7361;
+  text-align: center;
+  z-index: 2;
+}
+
+thead tr {
+  padding: 17px;
+  z-index: 2;
+}
+
+
+th {
+  border-right: 1px solid rgba(0,0,0,.2);
+  padding: .7em ;
+  font-size: 1.5em;
+  font-weight: normal;
+  font-variant: small-caps;
+}
+tbody {
+  display: block;
+  height:300px;
+  overflow-Y: scroll;
+  color: #000;
+}
+tr {
+  display: block;
+  overflow: hidden;
+}
+tbody tr:nth-child(odd) {
+  background: rgba(0,0,0,.2);
+}
+
+th, td {
+  width: 21%;
+  float:left;
+}
+td {
+  padding: .5em ;
+}
+
+/*Etiquetas que contienen el atributo tal*/
+
+[data-campo='Nick'] {
+  width: 10%;
+}
+
+[data-campo='Mail'] {
+  width: 40%;
+}
+
+[data-campo='Web'] {
+  width: 20%;
+  color:blue;
+}
+[data-campo='Twitter'] {
+  width: 15%;
+}
+[data-campo='Id'] {
+  width: 15%;
+}
+
+/*Clase especial*/
+.letraBlancaForzada {
+	color:white;
+}
+
+
+
+/*media responsive*/
+@media (max-width:1200px){ /*menores a 1200 pixeles*/
+[data-campo='Twitter'] {
+display:none;
+  float:left;
+}
+}
+
+@media (max-width:900px){ /*Para menores a 900 pixeles*/
+[data-campo='Web'] {
+display:none;
+  float:left;
+}
+
+[data-campo='Twitter'] {
+display:none;
+  float:left;
+}
+
+
+[data-campo='Id'] {
+width:30%;
+  float:left;
+}
+
+
+[data-campo='Nick'] {
+  width:30%;
+}
+
+
+[data-campo='mail'] {
+  width:30%;
+}
+}
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Rwd (Resposnsive Web Design) TABLE: Thead fijo & Tbody scroleable</h1>
+<table>
+ <thead>
+   <tr>
+   		<th data-campo='Nick'>Nick</th>
+   		<th data-campo='Mail'>Mail</th>
+   		<th data-campo='Web' class="letraBlancaForzada">Web</th>
+   		<th data-campo='Twitter'>Twitter</th>
+   		<th data-campo='Id'>Id</th>
+    </tr>
+ </thead>
+ <tbody>
+   <tr>
+   		<td data-campo='Nick'>Fulano</td>
+   		<td data-campo='Mail'>Fulano@gmail.com</td>
+   		<td data-campo='Web'>http://fulano.es</td>
+   		<td data-campo='Twitter'>@Fulano</td>
+   		<td data-campo='Id'>1</td>
+   </tr>
+   <tr>
+        <td data-campo='Nick'>Mengano</td>
+        <td data-campo='Mail'>Mengano@mail.com</td>
+        <td data-campo='Web'>http://mengano.com</td>
+        <td data-campo='Twitter'>@Mengano</td>
+        <td data-campo='Id'>2</td>
+    </tr>
+    <tr>
+        <td data-campo='Nick'>Zultano</td>
+        <td data-campo='Mail'>Zultano@gmail.com</td>
+        <td data-campo='Web'>http://zutano.org</td>
+        <td data-campo='Twitter'>@Zultano</td>
+        <td data-campo='Id'>3</td>
+    </tr>
+    <tr>
+        <td data-campo='Nick'>Fulanito</td>
+        <td data-campo='Mail'>Fulanito@mail.es</td>
+        <td data-campo='Web'>http://fulanito.music</td>
+        <td data-campo='Twitter'>@Fulanito</td>
+        <td data-campo='Id'>4</td>
+    </tr>
+    <tr>
+        <td data-campo='Nick'>Fulan</td>
+        <td data-campo='Mail'>Fulan@correo.es</td>
+        <td data-campo='Web'>http://fulan.com</td>
+        <td data-campo='Twitter'>@Fulan</td>
+        <td data-campo='Id'>5</td>
+    </tr>
+    <tr>
+        <td data-campo='Nick'>Gato</td>
+        <td data-campo='Mail'>gatoo@mail.com</td>
+        <td data-campo='Web'>gato.com</td>
+        <td data-campo='Twitter'>@gato</td>
+        <td data-campo='Id'>6</td>
+    </tr>
+    <tr>
+        <td data-campo='Nick'>Pipa</td>
+        <td data-campo='Mail'>pipa@mail.com</td>
+        <td data-campo='Web'>http://pipa</td>
+        <td data-campo='Twitter'>@pipa</td>
+        <td data-campo='Id'>7</td>
+    </tr>
+    <tr>
+   		<td data-campo='Nick'>Fulano</td>
+   		<td data-campo='Mail'>Fulano@gmail.com</td>
+   		<td data-campo='Web'>http://fulano.es</td>
+   		<td data-campo='Twitter'>@Fulano</td>
+   		<td data-campo='Id'>1</td>
+   </tr>
+   <tr>
+        <td data-campo='Nick'>Mengano</td>
+        <td data-campo='Mail'>Mengano@mail.com</td>
+        <td data-campo='Web'>http://mengano.com</td>
+        <td data-campo='Twitter'>@Mengano</td>
+        <td data-campo='Id'>2</td>
+    </tr>
+    <tr>
+        <td data-campo='Nick'>Zultano</td>
+        <td data-campo='Mail'>Zultano@gmail.com</td>
+        <td data-campo='Web'>http://zutano.org</td>
+        <td data-campo='Twitter'>@Zultano</td>
+        <td data-campo='Id'>3</td>
+    </tr>
+    <tr>
+        <td data-campo='Nick'>Fulanito</td>
+        <td data-campo='Mail'>Fulanito@mail.es</td>
+        <td data-campo='Web'>http://fulanito.music</td>
+        <td data-campo='Twitter'>@Fulanito</td>
+        <td data-campo='Id'>4</td>
+    </tr>
+    <tr>
+        <td data-campo='Nick'>Fulan</td>
+        <td data-campo='Mail'>Fulan@correo.es</td>
+        <td data-campo='Web'>http://fulan.com</td>
+        <td data-campo='Twitter'>@Fulan</td>
+        <td data-campo='Id'>5</td>
+    </tr>
+    <tr>
+        <td data-campo='Nick'>Gato</td>
+        <td data-campo='Mail'>gatoo@mail.com</td>
+        <td data-campo='Web'>gato.com</td>
+        <td data-campo='Twitter'>@gato</td>
+        <td data-campo='Id'>6</td>
+    </tr>
+    <tr>
+        <td data-campo='Nick'>Pipa</td>
+        <td data-campo='Mail'>pipa@mail.com</td>
+        <td data-campo='Web'>http://pipa</td>
+        <td data-campo='Twitter'>@pipa</td>
+        <td data-campo='Id'>7</td>
+    </tr>
+
+
+ </tbody>
+</table>
+
+</body>
+
+</html>

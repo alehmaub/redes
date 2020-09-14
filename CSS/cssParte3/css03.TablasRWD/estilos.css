@@ -1,0 +1,86 @@
+html{
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.encabezado {
+    background-color: salmon;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+  width: 100%;
+  background-color: darkcyan;
+}
+
+thead {
+  background-color: teal;
+  text-align: left;
+  color: aliceblue;
+}
+
+
+tbody {
+  display: block;
+  height:150px;
+  overflow-Y: scroll;
+  color: aliceblue;
+}
+
+tr {
+  display: block;
+  overflow: hidden;
+  height: 50px;
+}
+
+th, td {
+  width: 20%;
+  float:left;
+  padding: 15px;
+}
+
+tr:nth-child(even) {background-color: cadetblue;}
+
+[campo-dato='ID'] {
+    width: 5%;
+}
+[campo-dato='Nick'] {
+    width: 15%;
+}
+[campo-dato='Mail'] {
+    width: 20%;
+}
+[campo-dato='Web'] {
+    width: 20%;
+}
+[campo-dato='Twitter'] {
+    width: 15%;
+}
+[campo-dato='Skype'] {
+    width: 15%;
+}
+
+@media (max-width:1200px) {
+    [campo-dato='Skype'] {
+        display: none;
+    }
+}
+@media (max-width:1000px) {
+    [campo-dato='Twitter'] {
+        display: none;
+    }
+}
+@media (max-width:900px) {
+        [campo-dato='Web'] {
+        display: none;
+    }
+}
+@media (max-width:700px) {
+    [campo-dato='Mail'] {
+        display: none;
+    }
+}
