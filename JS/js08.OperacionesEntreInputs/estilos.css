@@ -1,0 +1,10 @@
+.contenedor {
+    width: 80%;
+    background-color: lightblue;
+    padding: 20px;
+    margin: auto;
+}
+
+button, input {
+    height: 20px;
+}

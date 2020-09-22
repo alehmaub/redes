@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Funciones Compartidas - Lehmacher</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>JS Funciones Compartidas - Lehmacher</h1>
+    <hr>
+
+    <div class="contenedor">
+        <input type="text" id="display">
+        <table>
+            <tr><td><button id="b1" value="1">1</button></td><td><button id="b2" value="2">2</button></td><td><button id="b3" value="3">3</button></td></tr>
+            <tr><td><button id="b4" value="4">4</button></td><td><button id="b5" value="5">5</button></td><td><button id="b6" value="6">6</button></td></tr>
+            <tr><td><button id="b7"  value="7">7</button></td><td><button id="b8" value="8">8</button></td><td><button id="b9" value="9">9</button></td></tr>
+        </table>
+        <hr>
+        <table>
+            <tr><td><button id="sumar">+</button></td><td><button id="mostrar">Muestra Acumulador</button></td></tr>
+            <tr><td><button id="borrarAcumulador">Borra Acumulador</button></td><td><button id="borrarDisplay">Borra Display</button></td></tr>
+        </table>
+    </div>
+
+    <script>
+
+        var acumulador;
+
+        function sumar(num){
+           document.getElementById("display").value += num;
+        }
+        function borrar(){
+           document.getElementById("display").value = "";
+        }
+        function acumular(){
+            
+        }
+
+        document.getElementById("b1").onclick = function(){
+            sumar(document.getElementById("b1").value);
+        }
+        document.getElementById("b2").onclick = function(){
+            sumar(document.getElementById("b2").value);
+        }
+        document.getElementById("b3").onclick = function(){
+            sumar(document.getElementById("b3").value);
+        }
+        document.getElementById("b4").onclick = function(){
+            sumar(document.getElementById("b4").value);
+        }
+        document.getElementById("b5").onclick = function(){
+            sumar(document.getElementById("b5").value);
+        }
+        document.getElementById("b6").onclick = function(){
+            sumar(document.getElementById("b6").value);
+        }
+        document.getElementById("b7").onclick = function(){
+            sumar(document.getElementById("b7").value);
+        }
+        document.getElementById("b8").onclick = function(){
+            sumar(document.getElementById("b8").value);
+        }
+        document.getElementById("b9").onclick = function(){
+            sumar(document.getElementById("b9").value);
+        }
+
+
+        document.getElementById("borrarDisplay").onclick=function(){
+            borrar();
+        }
+      
+    </script>
+    
+</body>
+</html>

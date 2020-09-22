@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operaciones sobre Input - Lehmacher</title>
+</head>
+<body>
+
+    <h1>JS Operaciones sobre Input - Lehmacher</h1>
+    <hr>
+
+    <input type="text" id="valor">
+    <button id="mostrarValor">Mostrar Valor</button>
+    <button id="sumarUno">Sumar Uno</button>
+    <button id="duplicado">Multiplica *2</button>
+    <button id="elevadoCuadrado">x^2</button>
+    <button id="elevadoValor">2^x</button>
+
+    <script>
+        document.getElementById("mostrarValor").onclick= function() { 
+	    alert(document.getElementById("valor").value); 
+        }
+        document.getElementById("sumarUno").onclick= function() {
+            document.getElementById("valor").value=parseInt(document.getElementById("valor").value)+1;
+        }
+
+        document.getElementById("duplicado").onclick= function() { 
+            document.getElementById("valor").value=parseInt(document.getElementById('valor').value)*2;
+        }
+
+        document.getElementById("elevadoCuadrado").onclick= function() { 
+            document.getElementById("valor").value=parseInt(document.getElementById('valor').value)*parseInt(document.getElementById('valor').value);
+        }   
+        document.getElementById("elevadoValor").onclick= function() { 
+            document.getElementById("valor").value=2**parseInt(document.getElementById('valor').value);
+        } 
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Convertir a Mayuscula - Lehmacher</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>JS Convertir a Mayuscula - Lehmacher</h1>
+    <hr>
+    <div class="contenedor">
+        <table>
+            <tr><td>Nombre</td><td><input type="text" id="nombre"></td></tr>            
+            <tr><td>Apellido</td><td><input type="text" id="apellido"></td></tr>
+        </table>
+    </div>
+
+    <script>
+        document.getElementById("nombre").onchange= function() {
+            this.value = this.value.toUpperCase();
+        }
+        document.getElementById("apellido").onchange= function() {
+            this.value = this.value.toUpperCase();
+        }
+    </script>
+    
+</body>
+</html>

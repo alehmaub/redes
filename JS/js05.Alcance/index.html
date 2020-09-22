@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Alcance - Lehmacher</title>
+</head>
+<body>
+
+    <h1>JS Alcance - Lehmacher</h1>
+    <hr>
+
+    <button id="incorrecto">Iniciacion incorrecta</button>
+    <button id="correcto">Iniciacion correcta</button>
+    <button id="global">Mostrar variable global</button>
+
+    <script>
+
+        var variableGlobal;
+
+        document.getElementById("correcto").onclick = function() {
+        variableGlobal = prompt("Ingrese valor para la variable global: ");
+        alert("El valor de variableGlobal es: " + variableGlobal);
+        alert("El tipo de variableGlobal es: " + typeof variableGlobal);
+        }
+
+        document.getElementById("incorrecto").onclick = function() {
+        variableLocal = prompt("Ingrese valor para la variable local: ");
+        alert("El valor de variableLocal es: " + variableLocal);
+        alert("El tipo de variableLocal es: " + typeof variableLocal);
+        }
+
+        document.getElementById("global").onclick = function() {
+            if (variableGlobal!=undefined) {
+                alert("El valor de variableGlobal es: " + variableGlobal);
+                alert("El tipo de variableGlobal es: " + typeof variableGlobal);
+            } else {
+                alert("La variabelGlobal no fue definida.");
+            }
+        }
+
+    </script>
+
+</body>
+</html>

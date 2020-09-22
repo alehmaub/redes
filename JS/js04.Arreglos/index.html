@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Arreglos - Lehmacher</title>
+</head>
+<body>
+
+    <h1>JS Arreglos - Lehmacher</h1>
+    <hr>
+
+    <script>
+
+        var arregloFrutas = [];
+
+        document.write("Tipo de arregloFrutas: "+typeof arregloFrutas);
+
+        arregloFrutas = ["banana","manzana"];
+        arregloFrutas.push (prompt("Ingrese una fruta distinta a banana o manzana: "));
+
+        document.write("<h4>Primer elemento cargado desde programa: "+arregloFrutas[0]+"</h4>");
+        document.write("<h4>Segundo elemento cargado desde programa: "+arregloFrutas[1]+"</h4>");
+        document.write("<h4>Tercer elemento cargado desde prompt: " +arregloFrutas[2]+"</h4>");
+
+        document.write("Longitud del arregloFrutas: " +arregloFrutas.length);
+
+    </script>
+    
+</body>
+</html>

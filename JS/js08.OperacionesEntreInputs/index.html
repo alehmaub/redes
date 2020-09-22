@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operaciones entre inputs - Lehmacher</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+
+    <h1>JS Operaciones entre inputs - Lehmacher</h1>
+    <hr>
+
+    <div class="contenedor">
+        <table>
+            <tr><td>Valor1:</td><td><input type="text"id="valorUno" value="0"></td></tr>
+            <tr><td>Valor2:</td><td><input type="text"id="valorDos" value="0"></td></tr>
+            <tr><td>Valor3:</td><td><input type="text"id="valorTres" value="0"></td></tr>
+            <tr><td>Resultado:</td><td><input type="text" id="resultado" ></td></tr>
+        </table>
+        <hr>    
+        <button id="suma">SUMA</button>
+        <button id="promedio">PROMEDIO</button>
+        <button id="mayor">MAYOR</button>
+    </div>
+
+    <script>
+
+        /*var valorUno = parseInt(document.getElementById('valorUno').value);
+        var valorDos = parseInt(document.getElementById('valorDos').value);
+        var valorTres = parseInt(document.getElementById('valorTres').value);
+        var sumado;*/
+
+        function suma() {
+            var valorUno = parseInt(document.getElementById('valorUno').value);
+            var valorDos = parseInt(document.getElementById('valorDos').value);
+            var valorTres = parseInt(document.getElementById('valorTres').value);
+            var sumado;
+            sumado = valorUno + valorDos + valorTres;
+            document.getElementById("resultado").value=sumado;
+        }
+
+        document.getElementById("suma").onclick = suma();
+
+    </script>
+
+</body>
+</html>
