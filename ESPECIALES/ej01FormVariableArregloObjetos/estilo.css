@@ -1,0 +1,24 @@
+body, html {
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header, .footer {
+    background-color: aquamarine;
+    text-align: center;
+    color: chocolate;
+    height: 15%;
+    font-size: 30px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    height: 70%;
+}
