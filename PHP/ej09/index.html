@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <script src="./jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="./modal.css">
+
+</head>
+
+<body>
+
+<h1>Div modal</h1>
+<hr/>
+
+<button id="botonModal" class="botonModal">ABRIR VENTANA MODAL</button>
+
+<div id="divModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form>
+      <table>
+        <tr>
+          <td><label>Id.: </label></td><td> <input type="number" name="numero" id="numero" required /></td>
+        </tr>
+        <tr>
+          <td><label>Usuario: </label></td><td> <input type="text" name="usuario" id="usuario" required ></td>
+        </tr>
+        <tr>
+          <td><label>Nombre: </label></td><td><input type="text" name="nombre" id="nombre" required ></td>
+        </tr>
+        <tr>
+          <td><label>Apellido: </label></td><td><input type="text" name="apellido" id="apellido" required ></td>
+        </tr>
+        <tr>
+          <td><label>Fecha nac.: </label></td><td><input type="date" name="nac" id="nac" required ></td>
+        </tr>
+      </table>
+      <br>      
+    </form>
+    <button id="enviar" name="enviar">SEND</button>
+    <br><br>
+    <div class="respuesta" id="respuesta"></div>
+  </div>
+</div>
+
+<hr/>
+<a href="../"> <i>Back</i> </a>
+
+
+<script>
+
+var modal = document.getElementById("divModal");
+var boton = document.getElementById("botonModal");
+var span = document.getElementsByClassName("close")[0];
+
+boton.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+
+<script>
+  
+$(document).ready(function(){
+  $("#enviar").click(function(){
+    confirm("¿Enviar datos?");
+    $("#respuesta").empty();
+    $("#respuesta").append("Esperando...");
+
+    /*var form = $("#formulario")[0];
+    var data = new FormData(form); */ 
+
+    $.ajax({
+      type:"post", 
+      url: "./respuesta.php", 
+      data: { numero: $("#numero").val(), usuario: $("#usuario").val(), nombre: $("#nombre").val(), apellido: $("#apellido").val(), nac: $("#nac").val()},
+      success: function(datos) {
+        //alert(datos);
+        $("#respuesta").html("El contenido pasado a Json es: " + datos);
+      }
+    });
+
+
+    })
+  })
+
+</script>
+
+</body>
+</html>

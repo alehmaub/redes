@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+	<script src="./jquery.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="ajax.css">
+
+</head>
+
+<body>
+
+<div id="contenedor">
+	<div id="entrada">
+		<h1>Dato a encriptar:</h1>
+		<input id="clave" name="clave" type="text" placeholder="Ingrese su dato aqui" style="width: 50%;">
+	</div>
+	<div id="trigger">
+		<h1>Encriptar</h1>
+	</div>
+	<div id="resultado">
+		<h1>Resultado:</h1>
+	</div>
+	<div class="limpiaFloats"></div>
+	<div id="estado">
+		<h1>Estado:</h1>
+	</div>
+	<div class="limpiaFloats"></div>
+
+</div>
+
+<hr/>
+
+<a href="../"> <i>Back</i> </a>
+
+<script>
+$(document).ready(function() {
+	$("#trigger" ).click(function() {
+		$("#resultado").empty();
+		$("#estado").empty();
+		$("#estado").append("<h1>Estado:</h1></br>Esperando...");
+		$('#resultado').html("Esperando...");
+		$("#resultado").addClass("estiloCambio");
+		$("#resultado").empty();
+
+		$.ajax({
+			type:"post", 
+			url: "./respuesta.php", 
+			data: { clave: $("#clave").val()},
+			success: function(respuestaDelServer, estado) {
+				$("#resultado").removeClass("estiloCambio");
+				$("#resultado").html("<h1>Resultado: </h1><h4>"+respuestaDelServer+"</h4>");
+				$("#estado").empty();
+				$("#estado").append("<h1>Estado: </h1><h3>"+estado+"</h3>");
+			}
+		});
+	}); 
+});
+</script>
+
+</body>
+</html>
+
